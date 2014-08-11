@@ -26,6 +26,6 @@ plot(strptime(datetime, "%d/%m/%Y %H:%M:%S"), data_table$Sub_metering_1, xlab=""
 lines(strptime(datetime, "%d/%m/%Y %H:%M:%S"), data_table$Sub_metering_1)
 lines(strptime(datetime, "%d/%m/%Y %H:%M:%S"), data_table$Sub_metering_2, col="red")
 lines(strptime(datetime, "%d/%m/%Y %H:%M:%S"), data_table$Sub_metering_3,  col="blue")
-legend("topright", lty=c(1,1,1), col=c("black","red","blue"), legend=c("Sub metering 1", "Sub metering 2", "Sub metering 3"))
+legend("topright", lty=c(1,1,1), col=c("black","red","blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 # Close the png device
 dev.off()
