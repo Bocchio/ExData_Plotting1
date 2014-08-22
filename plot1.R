@@ -14,7 +14,6 @@ col_names <- as.character(read.table(con, sep=";", nrow=1, stringsAsFactors=FALS
 data_table <- read.table(con, sep=";", stringsAsFactors=FALSE, skip=66638, nrow=2880)
 colnames(data_table) <- col_names
 close(con)
-library(datasets)
 # Set the output to the png device
 png(filename="plot1.png")
 # Make the background transparent
